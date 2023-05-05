@@ -10,7 +10,7 @@ docker system prune -a
 docker-compose up -d --renew-anon-volumes --build --force-recreate
 
 // Stop all containers
- docker stop $(docker ps -a -q)
+docker stop $(docker ps -a -q)
 
  // Clean 
  docker system prune -a
