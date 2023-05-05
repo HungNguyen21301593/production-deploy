@@ -3,7 +3,7 @@ services:
   browser:
     container_name: browser
     image: selenium/standalone-chrome:111.0
-    hostname: Hung
+    hostname: ${HOSTNAME}
     shm_size: 2gb
     privileged: true
     networks:
@@ -20,7 +20,7 @@ services:
 
   database:
     image: postgres:14.1-alpine
-    hostname: Hung
+    hostname: ${HOSTNAME}
     container_name: kijiji-helper-database
     ports:
       - '5432:5432'
@@ -34,7 +34,7 @@ services:
 
   api:
     container_name: kijiji-helper-api
-    hostname: Hung
+    hostname: ${HOSTNAME}
     image: hungnguyen991995/kijiji-helper-api:latest
     shm_size: 2gb
     privileged: true
@@ -55,7 +55,7 @@ services:
 
   index:
     container_name: kijiji-helper-index
-    hostname: Hung
+    hostname: ${HOSTNAME}
     image: hungnguyen991995/kijiji-helper-index:latest
     shm_size: 2gb
     depends_on: 
