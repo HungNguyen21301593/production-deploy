@@ -11,7 +11,7 @@ services:
     environment:
       - SE_SCREEN_WIDTH=1920
       - SE_SCREEN_HEIGHT=1080
-      - SE_NODE_SESSION_TIMEOUT=21600
+      - SE_NODE_SESSION_TIMEOUT=86400
     volumes:
       - kijiji-helper-shared-volume:/app/images
     ports:
