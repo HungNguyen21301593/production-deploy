@@ -6,6 +6,7 @@ services:
     hostname: ${HOSTNAME}
     shm_size: 2gb
     privileged: true
+    restart: always
     networks:
           - web_net
     environment:
@@ -22,6 +23,7 @@ services:
     image: postgres:14.1-alpine
     hostname: ${HOSTNAME}
     container_name: kijiji-helper-database
+    restart: always
     ports:
       - '5432:5432'
     networks:
@@ -36,6 +38,7 @@ services:
     container_name: kijiji-helper-api
     hostname: ${HOSTNAME}
     image: hungnguyen991995/kijiji-helper-api:latest
+    restart: always
     shm_size: 2gb
     privileged: true
     depends_on: 
@@ -57,6 +60,7 @@ services:
     container_name: kijiji-helper-index
     hostname: ${HOSTNAME}
     image: hungnguyen991995/kijiji-helper-index:latest
+    restart: always
     shm_size: 2gb
     depends_on: 
             - api

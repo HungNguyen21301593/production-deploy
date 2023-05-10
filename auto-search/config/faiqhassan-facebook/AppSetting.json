@@ -6,10 +6,10 @@
     "StartPage": 0, //>=1
     "EndPage": 1, //<2
     "MinAdsPositionOnEachPage": 0,
-    "MaximumAdsOnEachPage": 3,
+    "MaximumAdsOnEachPage": 5,
     "BaseUrlSetting": {
       "CriteriaUrls": [
-        "https://www.facebook.com/marketplace/london_ontario/search/?minPrice=100&maxPrice=450&daysSinceListed=1&sortBy=distance_ascend&query=iphone%2012&exact=true"
+        "https://www.facebook.com/marketplace/london_ontario/search?minPrice=60&daysSinceListed=1&query=iphones&exact=false"
       ],
       "DynamicParams": {
         "Page": "[page]"
@@ -23,8 +23,16 @@
     },
     "TelegramIds": [ "6056072775", "-993759165"],
     "DumbTelegramIds": ["-809000676"],
-    "Keywords": ["iphone 12", "i phone 12", "IPHONE 12"],
-    "ExcludeKeywords": ["case", "cases"]
+    "MustHaveKeywords": ["london, on"],
+    "Keywords": [
+      "iPhone",
+      "i phone",
+      "iPhone 12",
+      "iPhone 13",
+      "iPhone 14",
+      "iPhone 11"
+    ],
+    "ExcludeKeywords": ["iPhone 6", "iPhone 7"]
    },
    {
     "Type": "MarketPlace",
@@ -33,10 +41,10 @@
     "StartPage": 0, //>=1
     "EndPage": 1, //<2
     "MinAdsPositionOnEachPage": 0,
-    "MaximumAdsOnEachPage": 3,
+    "MaximumAdsOnEachPage": 5,
     "BaseUrlSetting": {
       "CriteriaUrls": [
-        "https://www.facebook.com/marketplace/london_ontario/search?minPrice=80&maxPrice=330&daysSinceListed=1&sortBy=distance_ascend&query=iphone%2011&exact=true"
+        "https://www.facebook.com/marketplace/london_ontario/search?minPrice=60&daysSinceListed=1&query=iphones&exact=false"
       ],
       "DynamicParams": {
         "Page": "[page]"
@@ -50,8 +58,16 @@
     },
     "TelegramIds": [ "6056072775", "-993759165"],
     "DumbTelegramIds": ["-809000676"],
-    "Keywords": ["iPhone 11", "i phone 11", "IPHONE 11"],
-    "ExcludeKeywords": ["pro", "max","case", "cases"]
+    "MustHaveKeywords": ["london, on"],
+    "Keywords": [
+      "iPhone",
+      "i phone",
+      "iPhone 12",
+      "iPhone 13",
+      "iPhone 14",
+      "iPhone 11"
+    ],
+    "ExcludeKeywords": ["iPhone 6", "iPhone 7"]
    },
    {
     "Type": "MarketPlace",
@@ -60,10 +76,10 @@
     "StartPage": 0, //>=1
     "EndPage": 1, //<2
     "MinAdsPositionOnEachPage": 0,
-    "MaximumAdsOnEachPage": 3,
+    "MaximumAdsOnEachPage": 5,
     "BaseUrlSetting": {
       "CriteriaUrls": [
-        "https://www.facebook.com/marketplace/london_ontario/search?minPrice=50&maxPrice=700&daysSinceListed=1&sortBy=distance_ascend&query=iphone%2013&exact=true"
+        "https://www.facebook.com/marketplace/london_ontario/search?minPrice=60&daysSinceListed=1&query=iphones&exact=false"
       ],
       "DynamicParams": {
         "Page": "[page]"
@@ -77,7 +93,69 @@
     },
     "TelegramIds": [ "6056072775", "-993759165"],
     "DumbTelegramIds": ["-809000676"],
-    "Keywords": ["iPhone 13", "i phone 13", "IPHONE 13"],
-    "ExcludeKeywords": ["pro", "max","case", "cases"]
+    "MustHaveKeywords": ["london, on"],
+    "Keywords": [
+      "iPhone",
+      "i phone",
+      "iPhone 12",
+      "iPhone 13",
+      "iPhone 14",
+      "iPhone 11"
+    ],
+    "ExcludeKeywords": ["iPhone 6", "iPhone 7"]
    }
+  //  {
+  //   "Type": "MarketPlace",
+  //   "User": "bachduongtl0304@gmail.com",
+  //   "Password": "03032003",
+  //   "StartPage": 0, //>=1
+  //   "EndPage": 1, //<2
+  //   "MinAdsPositionOnEachPage": 0,
+  //   "MaximumAdsOnEachPage": 3,
+  //   "BaseUrlSetting": {
+  //     "CriteriaUrls": [
+  //       "https://www.facebook.com/marketplace/london_ontario/search?minPrice=80&maxPrice=330&daysSinceListed=1&sortBy=distance_ascend&query=iphone%2011&exact=true"
+  //     ],
+  //     "DynamicParams": {
+  //       "Page": "[page]"
+  //     },
+  //     "StaticParams": {
+  //       "[location]": "calgary",
+  //       "[fromPrice]": "0",
+  //       "[toPrice]": "4000",
+  //       "[toYear]": "2015"
+  //     }
+  //   },
+  //   "TelegramIds": [ "6056072775", "-993759165"],
+  //   "DumbTelegramIds": ["-809000676"],
+  //   "Keywords": ["iPhone 11", "i phone 11", "IPHONE 11"],
+  //   "ExcludeKeywords": ["pro", "max","case", "cases"]
+  //  },
+  //  {
+  //   "Type": "MarketPlace",
+  //   "User": "0858008266",
+  //   "Password": "09091991",
+  //   "StartPage": 0, //>=1
+  //   "EndPage": 1, //<2
+  //   "MinAdsPositionOnEachPage": 0,
+  //   "MaximumAdsOnEachPage": 3,
+  //   "BaseUrlSetting": {
+  //     "CriteriaUrls": [
+  //       "https://www.facebook.com/marketplace/london_ontario/search?minPrice=50&maxPrice=700&daysSinceListed=1&sortBy=distance_ascend&query=iphone%2013&exact=true"
+  //     ],
+  //     "DynamicParams": {
+  //       "Page": "[page]"
+  //     },
+  //     "StaticParams": {
+  //       "[location]": "calgary",
+  //       "[fromPrice]": "0",
+  //       "[toPrice]": "4000",
+  //       "[toYear]": "2015"
+  //     }
+  //   },
+  //   "TelegramIds": [ "6056072775", "-993759165"],
+  //   "DumbTelegramIds": ["-809000676"],
+  //   "Keywords": ["iPhone 13", "i phone 13", "IPHONE 13"],
+  //   "ExcludeKeywords": ["pro", "max","case", "cases"]
+  //  }
 ]

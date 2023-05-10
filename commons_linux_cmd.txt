@@ -21,8 +21,6 @@ docker image push hungnguyen991995/autosearch
 
 
 // Start autosearch
-docker-compose -f docker-compose-local.yml --env-file .\config\FaiqHassan\env -p "faiqhassan" up -d --build
-
 docker-compose -f docker-compose.yml --env-file /root/production-deploy/auto-search/config/faiqhassan-facebook/env --compatibility -p "faiqhassan-facebook"  up -d --build
 Or on local:
 docker-compose -f docker-compose.yml --env-file ./config/faiqhassan-facebook/env --compatibility -p "faiqhassan-facebook"  up -d --build
@@ -35,6 +33,7 @@ docker-compose -f docker-compose.yml --env-file /root/production-deploy/auto-sea
 Demo: docker-compose --env-file /root/production-deploy/kijiji-helper/config/demo/env up -d --renew-anon-volumes --build --force-recreate
 cjbk89: docker-compose --env-file /root/production-deploy/kijiji-helper/config/cjbk89/env up -d --renew-anon-volumes --build --force-recreate
 thanh: docker-compose --env-file /root/production-deploy/kijiji-helper/config/thanh/env up -d --renew-anon-volumes --build --force-recreate
+faihsan: docker-compose --env-file /root/production-deploy/kijiji-helper/config/faihsan/env up -d --renew-anon-volumes --build --force-recreate
 // Add 2G swap
 // https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04
 sudo fallocate -l 2G /swapfile
@@ -42,3 +41,11 @@ sudo chmod 600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
 free -h
+
+// logs
+docker logs kijiji-helper-api -f
+
+// sync latest update 
+docker rm kijiji-helper-api -f && docker rmi hungnguyen991995/kijiji-helper-api -f
+
+
