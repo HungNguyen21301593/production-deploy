@@ -4,23 +4,24 @@
     "StartPage": 0, //>=1
     "EndPage": 1, //<2
     "MinAdsPositionOnEachPage": 0,
-    "MaximumAdsOnEachPage": 5,
+    "MaximumAdsOnEachPage": 10,
     "BaseUrlSetting": {
       "CriteriaUrls": [
-        "https://www.kijiji.ca/b-phone-tablet/london/iphones/k0c132l1700214?price=50__&ad=offering"
+        "https://www.kijiji.ca/b-cell-phone/canada/phone/k0c760l0?sort=dateDesc"
       ],
       "DynamicParams": {
         "Page": "[page]"
       },
-      "StaticParams": {
-      }
+      "StaticParams": {}
     },
     "TelegramIds": [
-      "6056072775",
-      "-787400919"
+      "-839644534"
     ],
-    "DumbTelegramIds": ["-809000676"],
+    "DumbTelegramIds": [
+      "-903083053"
+    ],
+    "MustHaveKeywords": [],
     "Keywords": [],
-    "ExcludeKeywords": ["Buy"]
+    "ExcludeKeywords": []
   }
 ]
