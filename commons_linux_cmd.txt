@@ -20,16 +20,18 @@ docker image tag faiqhassan-autosearch hungnguyen991995/autosearch
 docker image push hungnguyen991995/autosearch
 
 
-// Start autosearch
+// Start Autosearch
+Faiqhassan-facebook:
 docker-compose -f docker-compose.yml --env-file /root/production-deploy/auto-search/config/faiqhassan-facebook/env --compatibility -p "faiqhassan-facebook"  up -d --build
 Or on local:
 docker-compose -f docker-compose.yml --env-file ./config/faiqhassan-facebook/env --compatibility -p "faiqhassan-facebook"  up -d --build
 
-docker-compose -f docker-compose.yml --env-file /root/production-deploy/auto-search/config/faiqhassan-kijiji/env --compatibility -p "faiqhassan-kijiji"  up -d --build
-Tyson: docker-compose -f docker-compose.yml --env-file /root/production-deploy/auto-search/config/tyson/env --compatibility -p "tyson"  up -d --build
-docker-compose -f docker-compose.yml --env-file /root/production-deploy/auto-search/config/chingoc/env --compatibility -p "chingoc"  up -d --build
-// Start KijijiHelper
+Faiqhassan-kijiji: docker-compose -f docker-compose.yml --env-file /root/production-deploy/auto-search/config/faiqhassan-kijiji/env --compatibility -p "faiqhassan-kijiji"  up -d --build
+Tyson-kijiji: docker-compose -f docker-compose.yml --env-file /root/production-deploy/auto-search/config/tyson/env --compatibility -p "tyson"  up -d --build
+Thanh-kijiji: docker-compose -f docker-compose.yml --env-file /root/production-deploy/auto-search/config/thanh-kijiji/env --compatibility -p "thanh-kijiji"  up -d --build
+Chingoc: docker-compose -f docker-compose.yml --env-file /root/production-deploy/auto-search/config/chingoc/env --compatibility -p "chingoc"  up -d --build
 
+// Start KijijiHelper
 Demo: docker-compose --env-file /root/production-deploy/kijiji-helper/config/demo/env up -d --renew-anon-volumes --build --force-recreate
 cjbk89: docker-compose --env-file /root/production-deploy/kijiji-helper/config/cjbk89/env up -d --renew-anon-volumes --build --force-recreate
 thanh: docker-compose --env-file /root/production-deploy/kijiji-helper/config/thanh/env up -d --renew-anon-volumes --build --force-recreate

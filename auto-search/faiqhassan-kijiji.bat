@@ -1,1 +1,0 @@
-docker-compose -f docker-compose.yml --env-file .\config\faiqhassan-kijiji\env -p "faiqhassan-kijiji" up -d --build
