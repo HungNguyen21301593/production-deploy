@@ -35,6 +35,7 @@ Chingoc: docker-compose -f docker-compose.yml --env-file /root/production-deploy
 Demo: docker-compose --env-file /root/production-deploy/kijiji-helper/config/demo/env up -d --renew-anon-volumes --build --force-recreate
 cjbk89: docker-compose --env-file /root/production-deploy/kijiji-helper/config/cjbk89/env up -d --renew-anon-volumes --build --force-recreate
 thanh: docker-compose --env-file /root/production-deploy/kijiji-helper/config/thanh/env up -d --renew-anon-volumes --build --force-recreate
+Jus: docker-compose --env-file /root/production-deploy/kijiji-helper/config/jus/env up -d --renew-anon-volumes --build --force-recreate
 faihsan: docker-compose --env-file /root/production-deploy/kijiji-helper/config/faihsan/env up -d --renew-anon-volumes --build --force-recreate
 // Add 2G swap
 // https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04
