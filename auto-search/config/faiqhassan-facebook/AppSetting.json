@@ -32,7 +32,7 @@
       "iPhone 14",
       "iPhone 11"
     ],
-    "ExcludeKeywords": ["iPhone 6", "iPhone 7"]
+    "ExcludeKeywords": ["iPhone 6", "iPhone 7", "ali lad"]
    },
    {
     "Type": "MarketPlace",
@@ -67,7 +67,7 @@
       "iPhone 14",
       "iPhone 11"
     ],
-    "ExcludeKeywords": ["iPhone 6", "iPhone 7"]
+    "ExcludeKeywords": ["iPhone 6", "iPhone 7", "ali lad"]
    },
    {
     "Type": "MarketPlace",
@@ -102,7 +102,7 @@
       "iPhone 14",
       "iPhone 11"
     ],
-    "ExcludeKeywords": ["iPhone 6", "iPhone 7"]
+    "ExcludeKeywords": ["iPhone 6", "iPhone 7", "ali lad"]
    }
   //  {
   //   "Type": "MarketPlace",

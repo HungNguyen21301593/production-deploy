@@ -7,7 +7,7 @@
     "MaximumAdsOnEachPage": 10,
     "BaseUrlSetting": {
       "CriteriaUrls": [
-        "https://www.kijiji.ca/b-cell-phone/canada/phone/k0c760l0?sort=dateDesc"
+        "https://www.kijiji.ca/b-cell-phone/city-of-toronto/iphone-14/k0c760l1700273?for-sale-by=ownr&sort=dateDesc&radius=50.0&address=City+of+Toronto%2C+Ontario&ll=43.653226%2C-79.383184"
       ],
       "DynamicParams": {
         "Page": "[page]"

@@ -1,0 +1,49 @@
+[
+  
+  {
+    "Type": "Alonhadat",
+    "User": null,
+    "Password": null,
+    "StartPage": 0, //>=1
+    "EndPage": 1, //<2
+    "MinAdsPositionOnEachPage": 0,
+    "MaximumAdsOnEachPage": 4,
+    "BaseUrlSetting": {
+      "CriteriaUrls": [
+        "https://alonhadat.com.vn/nha-dat/can-ban.html"
+      ],
+      "DynamicParams": {
+        "Page": "[page]"
+      },
+      "StaticParams": {
+      }
+    },
+    "TelegramIds": [ "6056072775", "-972131631" ], //"-972131631"
+    "DumbTelegramIds": [],
+    "Keywords": [ "Hồ Chí Minh", "Hà Nội", "Đà Nẵng", "Đồng Nai", "Khánh Hòa", "Bà Rịa - Vũng Tàu", "Bình Dương", "Tây Ninh", "Long An" ], // "Bedroom Apartment", "Downtown" ,
+    "ExcludeKeywords": []
+  },
+  {
+    "Type": "AlonhadatAgent",
+    "User": null,
+    "Password": null,
+    "StartPage": 822102,
+    "EndPage": 900000,
+    "MinAdsPositionOnEachPage": 0,
+    "MaximumAdsOnEachPage": 0,
+    "BaseUrlSetting": {
+      "CriteriaUrls": [
+        "https://alonhadat.com.vn/nha-moi-gioi/ngo-[page].html"
+      ],
+      "DynamicParams": {
+        "Page": "[page]"
+      },
+      "StaticParams": {
+      }
+    },
+    "TelegramIds": [ "6056072775", "-972131631" ], //"-972131631"
+    "DumbTelegramIds": [],
+    "Keywords": [],
+    "ExcludeKeywords": []
+  }
+]
