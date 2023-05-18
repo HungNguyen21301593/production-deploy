@@ -51,6 +51,6 @@ echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 docker logs kijiji-helper-api -f
 
 // sync latest update 
-&& docker rm selenium/standalone-chrome && docker rm kijiji-helper-api -f && docker rmi hungnguyen991995/kijiji-helper-api -f
+docker rm selenium/standalone-chrome && docker rm kijiji-helper-api -f && docker rmi hungnguyen991995/kijiji-helper-api -f
 
 
