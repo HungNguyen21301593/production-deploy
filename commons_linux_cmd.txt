@@ -38,6 +38,7 @@ cjbk89: docker-compose --env-file /root/production-deploy/kijiji-helper/config/c
 thanh: docker-compose --env-file /root/production-deploy/kijiji-helper/config/thanh/env up -d --renew-anon-volumes --build --force-recreate
 Jus: docker-compose --env-file /root/production-deploy/kijiji-helper/config/jus/env up -d --renew-anon-volumes --build --force-recreate
 faihsan: docker-compose --env-file /root/production-deploy/kijiji-helper/config/faihsan/env up -d --renew-anon-volumes --build --force-recreate
+faihsan-1: docker-compose --env-file /root/production-deploy/kijiji-helper/config/faihsan-1/env up -d --renew-anon-volumes --build --force-recreate
 // Add 2G swap
 // https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04
 sudo fallocate -l 2G /swapfile
@@ -52,6 +53,6 @@ echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 docker logs kijiji-helper-api -f
 
 // sync latest update 
-docker rm selenium/standalone-chrome && docker rm kijiji-helper-api -f && docker rmi hungnguyen991995/kijiji-helper-api -f
+docker rm browser -f && docker rm kijiji-helper-api -f && docker rmi hungnguyen991995/kijiji-helper-api -f
 
 
