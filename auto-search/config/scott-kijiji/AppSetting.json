@@ -7,7 +7,7 @@
     "MaximumAdsOnEachPage": 15,
     "BaseUrlSetting": {
       "CriteriaUrls": [
-        "https://www.kijiji.ca/b-video-games-consoles/winnipeg/video-game-console/k0c141l1700192?sort=dateDesc"
+        "https://www.kijiji.ca/b-video-games-consoles/winnipeg/c141l1700192?rb=true"
       ],
       "DynamicParams": {
         "Page": "[page]"
