@@ -3,11 +3,11 @@
     "Type": "Kijiji",
     "StartPage": 0, //>=1
     "EndPage": 1, //<2
-    "MinAdsPositionOnEachPage": 0,
-    "MaximumAdsOnEachPage": 10,
+    "MinAdsPositionOnEachPage": 5,
+    "MaximumAdsOnEachPage": 15,
     "BaseUrlSetting": {
       "CriteriaUrls": [
-        "https://www.kijiji.ca/b-cars-trucks/ontario/2013__2019-used/c174l9004a68a49?for-sale-by=ownr&price=4000__25000&kilometers=500__160000"
+        "https://www.kijiji.ca/b-video-games-consoles/winnipeg/video-game-console/k0c141l1700192?sort=dateDesc"
       ],
       "DynamicParams": {
         "Page": "[page]"
@@ -18,10 +18,10 @@
       "-951378707"
     ],
     "DumbTelegramIds": [
-      "-934262082"
+      "-993611578"
     ],
     "MustHaveKeywords": [],
-    "Keywords": [" Lease ", " Lease takeover "],
+    "Keywords": [],
     "ExcludeKeywords": []
   }
 ]
