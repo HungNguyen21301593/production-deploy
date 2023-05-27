@@ -26,7 +26,7 @@ docker-compose -f docker-compose.yml --env-file /root/production-deploy/auto-sea
 Or on local:
 docker-compose -f docker-compose.yml --env-file ./config/faiqhassan-facebook/env --compatibility -p "faiqhassan-facebook"  up -d --build
 
-Faiqhassan-kijiji: docker-compose -f docker-compose.yml --env-file /root/production-deploy/auto-search/config/faiqhassan-kijiji/env --compatibility -p "faiqhassan-kijiji"  up -d --build
+Faiqhassan-kijiji: docker-compose -f docker-compose.yml --env-file /root/production-deploy/auto-search/config/faiqhassan-kijiji/env --compatibility -p "faiqhassan-kijiji"  up -d --build --force-recreate
 Tyson-kijiji: docker-compose -f docker-compose.yml --env-file /root/production-deploy/auto-search/config/tyson/env --compatibility -p "tyson"  up -d --build
 Thanh-kijiji: docker-compose -f docker-compose.yml --env-file /root/production-deploy/auto-search/config/thanh-kijiji/env --compatibility -p "thanh-kijiji"  up -d --build --force-recreate
 Scott-kijiji: docker-compose -f docker-compose.yml --env-file /root/production-deploy/auto-search/config/scott-kijiji/env --compatibility -p "scott-kijiji"  up -d --build --force-recreate
