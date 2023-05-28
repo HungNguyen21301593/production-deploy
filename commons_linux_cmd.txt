@@ -43,7 +43,7 @@ faihsan-2: docker-compose --env-file /root/production-deploy/kijiji-helper/confi
 peter4161: docker-compose --env-file /root/production-deploy/kijiji-helper/config/peter4161/env up -d --renew-anon-volumes --build --force-recreate
 
 // Start Supper search
-docker-compose up -d --force-recreate
+docker-compose --env-file ./env up -d --force-recreate
 
 
 // Add 2G swap
