@@ -41,6 +41,11 @@ faihsan: docker-compose --env-file /root/production-deploy/kijiji-helper/config/
 faihsan-1: docker-compose --env-file /root/production-deploy/kijiji-helper/config/faihsan-1/env up -d --renew-anon-volumes --build --force-recreate
 faihsan-2: docker-compose --env-file /root/production-deploy/kijiji-helper/config/faihsan-2/env up -d --renew-anon-volumes --build --force-recreate
 peter4161: docker-compose --env-file /root/production-deploy/kijiji-helper/config/peter4161/env up -d --renew-anon-volumes --build --force-recreate
+
+// Start Supper search
+docker-compose up -d --force-recreate
+
+
 // Add 2G swap
 // https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04
 sudo fallocate -l 2G /swapfile
