@@ -21,7 +21,7 @@
       "-965725480"
     ],
     "MustHaveKeywords": [],
-    "Keywords": ["Video games", "Video game Console", "Ps1", "PlayStation", "Wii", "Xbox", "Sega", "PS4", "PS3", "Ps2"],
+    "Keywords": [], // "Keywords": ["Video games", "Video game Console", "Ps1", "PlayStation", "Wii", "Xbox", "Sega", "PS4", "PS3", "Ps2"],
     "ExcludeKeywords": []
   }
 ]
