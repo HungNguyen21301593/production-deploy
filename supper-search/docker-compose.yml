@@ -68,5 +68,4 @@ networks:
       driver:  bridge
 
 volumes:
-  kijiji-helper-shared-volume:
   kijiji-helper-db:
