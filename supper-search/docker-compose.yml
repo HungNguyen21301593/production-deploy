@@ -14,46 +14,10 @@ services:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=postgres
     volumes: 
-      - kijiji-helper-db:/var/lib/postgresql/data
+      - db:/var/lib/postgresql/data
 
   executor-0:
     container_name: executor-0
-    image: hungnguyen991995/supper-search
-    shm_size: 2gb
-    privileged: true
-    depends_on: 
-            - database
-    networks:
-          - web_net
-    environment:
-      - CONNECTION_STRING=${CONNECTION_STRING}
-  
-  executor-1:
-    container_name: executor-1
-    image: hungnguyen991995/supper-search
-    shm_size: 2gb
-    privileged: true
-    depends_on: 
-            - database
-    networks:
-          - web_net
-    environment:
-      - CONNECTION_STRING=${CONNECTION_STRING}
-  
-  executor-2:
-    container_name: executor-2
-    image: hungnguyen991995/supper-search
-    shm_size: 2gb
-    privileged: true
-    depends_on: 
-            - database
-    networks:
-          - web_net
-    environment:
-      - CONNECTION_STRING=${CONNECTION_STRING}
-  
-  executor-3:
-    container_name: executor-3
     image: hungnguyen991995/supper-search
     shm_size: 2gb
     privileged: true
@@ -70,4 +34,4 @@ networks:
       driver:  bridge
 
 volumes:
-  kijiji-helper-db:
+  db:
