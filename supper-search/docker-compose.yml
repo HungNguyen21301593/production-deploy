@@ -9,8 +9,10 @@ services:
     networks:
           - web_net
     environment:
+      - PGUSER=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
     volumes: 
       - kijiji-helper-db:/var/lib/postgresql/data
 
