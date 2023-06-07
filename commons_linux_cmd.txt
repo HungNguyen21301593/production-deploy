@@ -13,7 +13,7 @@ docker-compose up -d --renew-anon-volumes --build --force-recreate
 docker stop $(docker ps -a -q)
 
  // Clean 
- docker system prune -a
+ docker stop $(docker ps -a -q) && docker system prune -a 
 
 // publish
 docker image tag faiqhassan-autosearch hungnguyen991995/autosearch
@@ -59,7 +59,7 @@ echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 
 // logs
 docker logs kijiji-helper-api -f
-docker-compose logs --tail=0 --follow
+docker-compose logs --tail=100 --follow
 
 // sync latest update 
 docker rm browser -f && docker rm kijiji-helper-api -f && docker rmi hungnguyen991995/kijiji-helper-api -f
