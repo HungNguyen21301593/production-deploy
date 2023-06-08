@@ -3,6 +3,7 @@ services:
   database:
     image: postgres:14.1-alpine
     container_name: database
+    restart: always
     ports:
       - '5432:5432'
     networks:
@@ -20,6 +21,37 @@ services:
     container_name: executor-0
     image: hungnguyen991995/supper-search
     shm_size: 2gb
+    restart: always
+    privileged: true
+    depends_on: 
+            - database
+    networks:
+          - web_net
+    environment:
+      - CONNECTION_STRING=${CONNECTION_STRING}
+      - SLEEP_INTERVAL_FROM=${SLEEP_INTERVAL_FROM}
+      - SLEEP_INTERVAL_TO=${SLEEP_INTERVAL_TO}
+  
+  executor-1:
+    container_name: executor-1
+    image: hungnguyen991995/supper-search
+    shm_size: 2gb
+    restart: always
+    privileged: true
+    depends_on: 
+            - database
+    networks:
+          - web_net
+    environment:
+      - CONNECTION_STRING=${CONNECTION_STRING}
+      - SLEEP_INTERVAL_FROM=${SLEEP_INTERVAL_FROM}
+      - SLEEP_INTERVAL_TO=${SLEEP_INTERVAL_TO}
+
+  executor-2:
+    container_name: executor-2
+    image: hungnguyen991995/supper-search
+    shm_size: 2gb
+    restart: always
     privileged: true
     depends_on: 
             - database
