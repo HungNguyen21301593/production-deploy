@@ -58,7 +58,7 @@ sudo cp /etc/fstab /etc/fstab.bak
 echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 
 // logs
-docker logs kijiji-helper-api -f
+docker logs kijiji-helper-api -f --tail=1000
 docker-compose logs --tail=100 --follow
 
 // sync latest update 
