@@ -13,7 +13,7 @@ docker-compose up -d --renew-anon-volumes --build --force-recreate
 docker stop $(docker ps -a -q)
 
  // Clean 
- docker stop $(docker ps -a -q) && docker system prune -a 
+ docker stop $(docker ps -a -q) && docker system prune -a -f
 
 // publish
 docker image tag faiqhassan-autosearch hungnguyen991995/autosearch
@@ -65,3 +65,9 @@ docker-compose logs --tail=100 --follow
 
 // sync latest update 
 docker rm browser -f && docker rm kijiji-helper-api -f && docker rmi hungnguyen991995/kijiji-helper-api -f
+
+
+// cron 
+https://www.saltycrane.com/blog/2008/09/simple-cron-example/
+https://tecadmin.net/crontab-in-linux-with-20-examples-of-cron-schedule/
+*/10 * * * * chmod +x /root/production-deploy/supper-search/update.sh && /root/production-deploy/supper-search/update.sh >> /tmp/cron_output 
