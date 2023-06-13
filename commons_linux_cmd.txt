@@ -70,4 +70,4 @@ docker rm browser -f && docker rm kijiji-helper-api -f && docker rmi hungnguyen9
 // cron 
 https://www.saltycrane.com/blog/2008/09/simple-cron-example/
 https://tecadmin.net/crontab-in-linux-with-20-examples-of-cron-schedule/
-*/10 * * * * chmod +x /root/production-deploy/supper-search/update.sh && /root/production-deploy/supper-search/update.sh >> /tmp/cron_output 
+*/10 * * * * /root/production-deploy/supper-search/update.sh >> /tmp/cron_output 
