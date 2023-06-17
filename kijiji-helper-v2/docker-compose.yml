@@ -1,0 +1,65 @@
+version: "3.9"
+services:
+  browser:
+    container_name: browser
+    image: selenium/standalone-chrome:111.0
+    hostname: ${HOSTNAME}
+    shm_size: 2gb
+    privileged: true
+    restart: always
+    networks:
+          - web_net
+    environment:
+      - SE_SCREEN_WIDTH=1920
+      - SE_SCREEN_HEIGHT=1080
+      - SE_NODE_SESSION_TIMEOUT=86400
+    volumes:
+      - kijiji-helper-shared-volume:/app/images
+    ports:
+      - "4444:4444"
+      - "7900:7900"
+
+  database:
+    image: postgres:14.1-alpine
+    hostname: ${HOSTNAME}
+    container_name: kijiji-helper-database
+    restart: always
+    ports:
+      - '5432:5432'
+    networks:
+          - web_net
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes: 
+      - kijiji-helper-db:/var/lib/postgresql/data
+
+  app:
+    container_name: kijiji-helper-app
+    hostname: ${HOSTNAME}
+    image: hungnguyen991995/kijiji-helper-app:latest
+    restart: always
+    shm_size: 2gb
+    privileged: true
+    depends_on: 
+            - browser
+            - database
+    networks:
+          - web_net
+    ports:
+      - "5252:5252"
+    volumes:
+      - kijiji-helper-shared-volume:/app/images
+    environment:
+      - TestMode=false
+      - ASPNETCORE_URLS=http://+:5252
+      - REMOTE_DRIVER_URL=http://browser:4444/wd/hub
+
+networks:
+    web_net:
+      external: false
+      driver:  bridge
+
+volumes:
+  kijiji-helper-shared-volume:
+  kijiji-helper-db:
