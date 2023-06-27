@@ -74,3 +74,6 @@ https://tecadmin.net/crontab-in-linux-with-20-examples-of-cron-schedule/
 chmod +x /root/production-deploy/supper-search/update.sh
 
 tail -f /tmp/cron_output
+
+// open port
+https://www.hostinger.com/tutorials/how-to-configure-firewall-on-ubuntu-using-ufw/
