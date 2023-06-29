@@ -1,41 +1,6 @@
 [
   {
     "Type": "MarketPlace",
-    "User": "0858008266",
-    "Password": "Hung9995",
-    "StartPage": 0, //>=1
-    "EndPage": 1, //<2
-    "MinAdsPositionOnEachPage": 0,
-    "MaximumAdsOnEachPage": 5,
-    "BaseUrlSetting": {
-      "CriteriaUrls": [
-        "https://www.facebook.com/marketplace/london_ontario/search?minPrice=60&daysSinceListed=1&query=iphones&exact=false"
-      ],
-      "DynamicParams": {
-        "Page": "[page]"
-      },
-      "StaticParams": {
-        "[location]": "calgary",
-        "[fromPrice]": "0",
-        "[toPrice]": "4000",
-        "[toYear]": "2015"
-      }
-    },
-    "TelegramIds": [ "6056072775", "-993759165"],
-    "DumbTelegramIds": ["-809000676"],
-    "MustHaveKeywords": ["london, on"],
-    "Keywords": [
-      "iPhone",
-      "i phone",
-      "iPhone 12",
-      "iPhone 13",
-      "iPhone 14",
-      "iPhone 11"
-    ],
-    "ExcludeKeywords": ["iPhone 6", "iPhone 7", "ali lad"]
-   },
-   {
-    "Type": "MarketPlace",
     "User": "bachduongtl0304@gmail.com",
     "Password": "0303200303032003",
     "StartPage": 0, //>=1
@@ -56,9 +21,9 @@
         "[toYear]": "2015"
       }
     },
-    "TelegramIds": [ "6056072775", "-993759165"],
-    "DumbTelegramIds": ["-809000676"],
-    "MustHaveKeywords": ["london, on"],
+    "TelegramIds": [ "6056072775", "-993759165" ],
+    "DumbTelegramIds": [ "-809000676" ],
+    "MustHaveKeywords": [ "london, on" ],
     "Keywords": [
       "iPhone",
       "i phone",
@@ -67,9 +32,9 @@
       "iPhone 14",
       "iPhone 11"
     ],
-    "ExcludeKeywords": ["iPhone 6", "iPhone 7", "ali lad"]
-   },
-   {
+    "ExcludeKeywords": [ "iPhone 6", "iPhone 7", "ali lad" ]
+  },
+  {
     "Type": "MarketPlace",
     "User": "0858008266",
     "Password": "09091991",
@@ -91,9 +56,9 @@
         "[toYear]": "2015"
       }
     },
-    "TelegramIds": [ "6056072775", "-993759165"],
-    "DumbTelegramIds": ["-809000676"],
-    "MustHaveKeywords": ["london, on"],
+    "TelegramIds": [ "6056072775", "-993759165" ],
+    "DumbTelegramIds": [ "-809000676" ],
+    "MustHaveKeywords": [ "london, on" ],
     "Keywords": [
       "iPhone",
       "i phone",
@@ -102,7 +67,6 @@
       "iPhone 14",
       "iPhone 11"
     ],
-    "ExcludeKeywords": ["iPhone 6", "iPhone 7", "ali lad"]
-   }
-  
+    "ExcludeKeywords": [ "iPhone 6", "iPhone 7", "ali lad" ]
+  }
 ]

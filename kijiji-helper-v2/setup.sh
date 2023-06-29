@@ -1,5 +1,5 @@
 #!/bin/sh
-apt  install docker-compose
+apt  install docker-compose -f
 read -p "Enter Username: " username
 echo "UserName: $username"
 echo "HostName: $username-PC"
