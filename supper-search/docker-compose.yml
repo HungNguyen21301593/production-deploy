@@ -31,6 +31,8 @@ services:
       - CONNECTION_STRING=${CONNECTION_STRING}
       - SLEEP_INTERVAL_FROM=${SLEEP_INTERVAL_FROM}
       - SLEEP_INTERVAL_TO=${SLEEP_INTERVAL_TO}
+      - HTTP_PROXY=${HTTP_PROXY}
+      - HTTPS_PROXY=${HTTPS_PROXY}
   
   executor-1:
     container_name: executor-1
@@ -46,6 +48,8 @@ services:
       - CONNECTION_STRING=${CONNECTION_STRING}
       - SLEEP_INTERVAL_FROM=${SLEEP_INTERVAL_FROM}
       - SLEEP_INTERVAL_TO=${SLEEP_INTERVAL_TO}
+      - HTTP_PROXY=${HTTP_PROXY}
+      - HTTPS_PROXY=${HTTPS_PROXY}
 
   executor-2:
     container_name: executor-2
@@ -61,6 +65,8 @@ services:
       - CONNECTION_STRING=${CONNECTION_STRING}
       - SLEEP_INTERVAL_FROM=${SLEEP_INTERVAL_FROM}
       - SLEEP_INTERVAL_TO=${SLEEP_INTERVAL_TO}
+      - HTTP_PROXY=${HTTP_PROXY}
+      - HTTPS_PROXY=${HTTPS_PROXY}
     
 networks:
     web_net:
