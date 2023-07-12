@@ -1,5 +1,5 @@
 CONNECTION_STRING="User ID=postgres;Password=postgres;Host=database;Port=5432;Database=postgres;"
-HTTP_PROXY="http://brd-customer-hl_c6db3744-zone-data_center:s1wg9idbp34b@brd.superproxy.io:22225"
+HTTP_PROXY="http://brd-customer-hl_c6db3744-zone-data_center:s1wg9idbp34b@brd.superproxy.io:22225:80"
 HTTPS_PROXY="https://brd-customer-hl_c6db3744-zone-data_center:s1wg9idbp34b@brd.superproxy.io:22225"
 SLEEP_INTERVAL_FROM=10
 SLEEP_INTERVAL_TO=15
