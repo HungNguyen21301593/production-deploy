@@ -24,7 +24,7 @@ docker image push hungnguyen991995/autosearch
 Faiqhassan-facebook:
 docker-compose -f docker-compose.yml --env-file /root/production-deploy/auto-search/config/faiqhassan-facebook/env --compatibility -p "faiqhassan-facebook"  up -d --build
 Or on local:
-docker-compose -f docker-compose.yml --env-file ./config/faiqhassan-facebook/env --compatibility -p "faiqhassan-facebook"  up -d --build
+docker-compose -f docker-compose.yml --env-file ./config/faiqhassan-facebook/env -p "faiqhassan-facebook"  up -d --build
 
 Faiqhassan-kijiji: docker-compose -f docker-compose.yml --env-file /root/production-deploy/auto-search/config/faiqhassan-kijiji/env --compatibility -p "faiqhassan-kijiji"  up -d --build --force-recreate
 Tyson-kijiji: docker-compose -f docker-compose.yml --env-file /root/production-deploy/auto-search/config/tyson/env --compatibility -p "tyson"  up -d --build --force-recreate
@@ -32,7 +32,9 @@ Tyson-kijiji 1: docker-compose -f docker-compose.yml --env-file /root/production
 Thanh-kijiji: docker-compose -f docker-compose.yml --env-file /root/production-deploy/auto-search/config/thanh-kijiji/env --compatibility -p "thanh-kijiji"  up -d --build --force-recreate
 Scott-kijiji: docker-compose -f docker-compose.yml --env-file /root/production-deploy/auto-search/config/scott-kijiji/env --compatibility -p "scott-kijiji"  up -d --build --force-recreate
 Chingoc: docker-compose -f docker-compose.yml --env-file /root/production-deploy/auto-search/config/chingoc/env --compatibility -p "chingoc"  up -d --build
-andrea-guadagnoscommesse: docker-compose -f docker-compose.yml --env-file /root/production-deploy/auto-search/config/andrea-guadagnoscommesse/env --compatibility -p "andrea-guadagnoscommesse"  up -d --build --force-recreate
+andrea-guadagnoscommesse: 
+docker rm andrea-guadagnoscommesse-autosearch -f && docker image rm hungnguyen991995/autosearch -f 
+docker-compose -f docker-compose.yml --env-file /root/production-deploy/auto-search/config/andrea-guadagnoscommesse/env -p "andrea-guadagnoscommesse"  up -d --force-recreate
 
 
 // Start KijijiHelper
