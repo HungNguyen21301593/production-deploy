@@ -1,0 +1,2 @@
+#!/bin/sh
+cd /root/production-deploy/auto-search && docker-compose -f docker-compose.yml --env-file /root/production-deploy/auto-search/config/andrea-guadagnoscommesse/env -p "andrea-guadagnoscommesse"  up -d --force-recreate
