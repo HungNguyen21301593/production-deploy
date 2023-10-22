@@ -27,6 +27,8 @@ services:
       - CONNECTION_STRING=${CONNECTION_STRING}
       - SLEEP_INTERVAL_FROM=${SLEEP_INTERVAL_FROM}
       - SLEEP_INTERVAL_TO=${SLEEP_INTERVAL_TO}
+    depends_on:
+      - database
     
 networks:
     web_net:
