@@ -4,10 +4,11 @@ services:
     image: postgres:14.1-alpine
     container_name: database
     restart: always
-    ports:
-      - '5432:5432'
-    networks:
-          - web_net
+    # ports:
+    #   - '5432:5432'
+    # networks:
+    #       - web_net
+    network_mode: "host"
     environment:
       - PGUSER=postgres
       - POSTGRES_USER=postgres
