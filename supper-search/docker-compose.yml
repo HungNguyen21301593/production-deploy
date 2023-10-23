@@ -29,6 +29,8 @@ services:
       - SLEEP_INTERVAL_TO=${SLEEP_INTERVAL_TO}
     depends_on:
       - database
+    networks:
+      - web_net
     
 networks:
     web_net:
