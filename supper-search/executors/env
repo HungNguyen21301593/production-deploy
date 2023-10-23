@@ -1,3 +1,3 @@
-CONNECTION_STRING="User ID=postgres;Password=postgres;Host=165.227.33.121;Port=5432;Database=postgres;"
+CONNECTION_STRING="User ID=postgres;Password=postgres;Host=database;Port=5432;Database=postgres;"
 SLEEP_INTERVAL_FROM=0
 SLEEP_INTERVAL_TO=0
