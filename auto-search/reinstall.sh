@@ -1,1 +1,1 @@
-docker-compose -f docker-compose.yml --env-file /root/production-deploy/auto-search/config/andrea-guadagnoscommesse/env down && docker image rm hungnguyen991995/autosearch && sh update.sh
+docker image rm hungnguyen991995/autosearch -f && sh update.sh
