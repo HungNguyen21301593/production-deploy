@@ -74,6 +74,7 @@ https://www.saltycrane.com/blog/2008/09/simple-cron-example/
 https://tecadmin.net/crontab-in-linux-with-20-examples-of-cron-schedule/
 */10 * * * * sh /root/production-deploy/supper-search/update.sh >> /tmp/cron_output 
 chmod +x /root/production-deploy/supper-search/update.sh
+chmod +x /root/production-deploy/auto-search/update.sh
 
 tail -f /tmp/cron_output
 

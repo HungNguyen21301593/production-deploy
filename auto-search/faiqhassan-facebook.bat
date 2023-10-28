@@ -1,1 +1,0 @@
-docker-compose -f docker-compose.yml --env-file .\config\faiqhassan-facebook\.env -p "faiqhassan-facebook" up -d --build

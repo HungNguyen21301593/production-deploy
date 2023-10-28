@@ -1,1 +1,0 @@
-docker-compose -f docker-compose.yml --env-file .\config\chingoc\env -p "chingoc" up -d --build
