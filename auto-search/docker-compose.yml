@@ -15,6 +15,7 @@ services:
       - SLEEP_INTERVAL_FROM=${SLEEP_INTERVAL_FROM} 
       - SLEEP_INTERVAL_TO=${SLEEP_INTERVAL_TO}   
       - WARM_UP_SLEEP=${WARM_UP_SLEEP}   
+      - CONNECTION_STRING=User ID=postgres;Password=postgres;Host=165.227.33.121;Port=5432;Database=postgres; 
     depends_on:
       - browser
     volumes:
