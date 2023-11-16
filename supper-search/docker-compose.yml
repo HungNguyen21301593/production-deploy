@@ -42,7 +42,7 @@ services:
           - web_net
     environment:
       - REMOTE_DRIVER_URL=http://browser:4444/wd/hub
-      - SEARCH_INTERVAL=10
+      - SEARCH_INTERVAL=60
       - SLEEP_INTERVAL_FROM=${SLEEP_INTERVAL_FROM} 
       - SLEEP_INTERVAL_TO=${SLEEP_INTERVAL_TO}   
       - WARM_UP_SLEEP=60 
