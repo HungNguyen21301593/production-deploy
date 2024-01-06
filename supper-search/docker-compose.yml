@@ -31,43 +31,43 @@ services:
     networks:
       - web_net
 
-  autosearch:
-    container_name: autosearch
-    hostname: autosearch
-    image: hungnguyen991995/autosearch:latest
-    privileged: true
-    restart: always
-    networks:
-          - web_net
-    environment:
-      - REMOTE_DRIVER_URL=http://browser:4444/wd/hub
-      - SEARCH_INTERVAL=60
-      - SLEEP_INTERVAL_FROM=${SLEEP_INTERVAL_FROM} 
-      - SLEEP_INTERVAL_TO=${SLEEP_INTERVAL_TO}   
-      - WARM_UP_SLEEP=60 
-      - CONNECTION_STRING=User ID=postgres;Password=postgres;Host=database;Port=5432;Database=postgres; 
-    depends_on:
-      - browser
+  # autosearch:
+  #   container_name: autosearch
+  #   hostname: autosearch
+  #   image: hungnguyen991995/autosearch:latest
+  #   privileged: true
+  #   restart: always
+  #   networks:
+  #         - web_net
+  #   environment:
+  #     - REMOTE_DRIVER_URL=http://browser:4444/wd/hub
+  #     - SEARCH_INTERVAL=60
+  #     - SLEEP_INTERVAL_FROM=${SLEEP_INTERVAL_FROM} 
+  #     - SLEEP_INTERVAL_TO=${SLEEP_INTERVAL_TO}   
+  #     - WARM_UP_SLEEP=60 
+  #     - CONNECTION_STRING=User ID=postgres;Password=postgres;Host=database;Port=5432;Database=postgres; 
+  #   depends_on:
+  #     - browser
     
-  browser:
-    container_name: browser
-    image: selenium/standalone-edge:111.0
-    hostname: browser
-    shm_size: 2gb
-    privileged: true
-    restart: always
-    networks:
-          - web_net
-    environment:
-      - SE_SCREEN_WIDTH=1920
-      - SE_SCREEN_HEIGHT=1080
-      - SE_NODE_SESSION_TIMEOUT=600
-      - SE_DRAIN_AFTER_SESSION_COUNT=0
-      - SE_NODE_OVERRIDE_MAX_SESSIONS=true
-      - SE_NODE_MAX_SESSIONS=5
-    ports:
-      - "4444:4444"
-      - "7900:7900"
+  # browser:
+  #   container_name: browser
+  #   image: selenium/standalone-edge:111.0
+  #   hostname: browser
+  #   shm_size: 2gb
+  #   privileged: true
+  #   restart: always
+  #   networks:
+  #         - web_net
+  #   environment:
+  #     - SE_SCREEN_WIDTH=1920
+  #     - SE_SCREEN_HEIGHT=1080
+  #     - SE_NODE_SESSION_TIMEOUT=600
+  #     - SE_DRAIN_AFTER_SESSION_COUNT=0
+  #     - SE_NODE_OVERRIDE_MAX_SESSIONS=true
+  #     - SE_NODE_MAX_SESSIONS=5
+  #   ports:
+  #     - "4444:4444"
+  #     - "7900:7900"
 
 networks:
     web_net:
