@@ -14,7 +14,7 @@ services:
       - POSTGRES_DB=postgres
       - POSTGRES_HOST_AUTH_METHOD=trust
     volumes: 
-      - db:/var/lib/postgresql/data2
+      - db1:/var/lib/postgresql/data
   
   executor-0:
     container_name: executor-0
@@ -75,4 +75,4 @@ networks:
       driver:  bridge
 
 volumes:
-  db:
+  db1:
