@@ -3,7 +3,6 @@ services:
   database:
     image: postgres:14.1-alpine
     container_name: database
-    restart: always
     ports:
       - '5432:5432'
     networks:
@@ -15,7 +14,7 @@ services:
       - POSTGRES_DB=postgres
       - POSTGRES_HOST_AUTH_METHOD=trust
     volumes: 
-      - db:/var/lib/postgresql/data
+      - db:/var/lib/postgresql/data2
   
   executor-0:
     container_name: executor-0
